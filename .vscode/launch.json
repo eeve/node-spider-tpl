@@ -1,0 +1,29 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "name": "启动程序",
+      "cwd": "${workspaceRoot}",
+      "restart": true,
+      "protocol": "inspector",
+      "port": 9229,
+      "stopOnEntry": false,
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [ "dev", "--inspect-brk", "--nolazy" ],
+      "skipFiles": [
+				"node_modules/**/*"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "preLaunchTask": "build",
+      "timeout": 1000
+    }
+  ],
+  "diagnosticLogging": true
+}

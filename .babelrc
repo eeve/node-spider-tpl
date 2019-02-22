@@ -1,0 +1,20 @@
+{
+	"presets": [
+		["@babel/preset-env", {
+      "debug": false,
+      "useBuiltIns": "usage",
+			"targets": {
+        "browsers": [
+          "last 2 versions",
+          "last 4 Edge versions",
+          "not ie < 11"
+        ]
+			}
+    }]
+  ],
+  "sourceMaps": "inline",
+  "retainLines": false,
+	"plugins": [
+    "transform-class-properties"
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "node-spider-tpl",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development babel-node src/index.js",
+    "build": "rimraf dist && cross-env NODE_ENV=production babel src -d dist --source-maps",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/node": "7.2.2",
+    "@babel/plugin-transform-runtime": "7.2.0",
+    "@babel/polyfill": "7.2.5",
+    "@babel/preset-env": "7.3.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-https-proxy-fix": "^0.17.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "bluebird": "^3.5.3",
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
